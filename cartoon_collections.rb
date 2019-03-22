@@ -25,7 +25,10 @@ end
 def find_the_cheese(array)
   i = 0
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.any? do |food|
-    food[i] == "cheddar" || "gouda" || "camembert"
+  array.each do |food| 
+    if food[i] == "cheddar" || "gouda" || "camembert"
+      return food[i]
+    else 
+      i += 1
 end
 end
