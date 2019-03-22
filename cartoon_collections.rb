@@ -14,7 +14,7 @@ end
 
 def long_planeteer_calls(array)
   array.find do |word|
-    word.length > 4
+   if word.length > 4
     puts true
 end
 return false
