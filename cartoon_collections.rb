@@ -7,7 +7,8 @@ end
 def summon_captain_planet(array)
   new_array=[]
   array.each do |element|
-    new_array << element[0].upcase + "!"
+    element[0].upcase
+    new_array << element + "!"
 end
 return new_array
 end
