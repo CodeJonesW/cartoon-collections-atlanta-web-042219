@@ -13,7 +13,8 @@ return new_array
 end
 
 def long_planeteer_calls(array)
-  array.each do |word|
+  array.find do |word|
+    
     
     end
 end
