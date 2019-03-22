@@ -23,13 +23,12 @@ def long_planeteer_calls(array)
 end
 
 def find_the_cheese(array)
-  i = 0
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.each do |food| 
-    if food[i] == "cheddar" || "gouda" || "camembert"
-      return food[i]
+    if food == "cheddar" || "gouda" || "camembert"
+      return food
     else 
-      i += 1
+      return nil
 end
 end
 end
